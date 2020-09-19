@@ -11,7 +11,10 @@ public class Task06Main {
 
     static int getMax(int a, int b, int c, int d) {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int max1=(a>b)?a:b;
+        int max2=(c>d)?c:d;
+        int res = ((max1>max2)?max1:max2);
+        return res;
     }
 
 }
