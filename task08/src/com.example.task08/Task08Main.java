@@ -14,10 +14,10 @@ public class Task08Main {
 
     static long mult(int[] arr) {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        if (arr==null) return 0;
+        if (arr.length == 0 ) return 0;
         long mulArr = 1;
         for (int come : arr){
-            multArr*=come;
+            mulArr*=come;
         }
         return mulArr;
     }
