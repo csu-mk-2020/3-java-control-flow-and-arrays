@@ -13,14 +13,14 @@ public class Task10Main {
     static int numMin(int[] arr) {
         //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
         int MinArr = arr[0];
-        int Nomber= -1;
+        int Number= -1;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] <= MinArr) {
                 MinArr = arr[i];
-                Nomber = i;
+                Number = i;
             }
         }
-        return Nomber;
+        return Number;
     }
 
 }
