@@ -1,4 +1,6 @@
 package com.example.task11;
+import java.util.Arrays;
+import java.util.NoSuchElementException;
 
 public class Task11Main {
     public static void main(String[] args) {
@@ -12,7 +14,21 @@ public class Task11Main {
     }
 
     static void swap(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        int min;
+        try {
+            min = Arrays.stream(arr).min().getAsInt();
+        }catch (NoSuchElementException | NullPointerException exception){
+            return;
+        }
+
+        int indexMin = -1;
+        for (int i = 0; i < arr.length; ++i) {
+            if(arr[i] == min)
+                indexMin = i;
+        }
+        int temp = arr[0];
+        arr[0] = min;
+        arr[indexMin] = temp;
     }
 
 }
