@@ -18,13 +18,8 @@ public class Task10Main {
         int min = arr[0];
         int res = 0;
         for(int index = 0; index < arr.length; ++index){
-            if(arr[index] < min){
+            if(arr[index] <= min){
                 min = arr[index];
-                //indexArray[indexForIndexArr] = index;
-            }
-        }
-        for(int index = 0; index < arr.length; ++index){
-            if(min == arr[index]){
                 res = index;
             }
         }
