@@ -10,6 +10,13 @@ public class Task03Main {
     }
 
     static String getNameOfWeekDays(int weekDaysNumber) {
+        /*
         return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        */
+        String[] days = new String[]{"такого дня недели не существует", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"};
+        if (weekDaysNumber > days.length || weekDaysNumber < 0) {
+            return "такого дня недели не существует";
+        }
+        return days[weekDaysNumber];
     }
 }
