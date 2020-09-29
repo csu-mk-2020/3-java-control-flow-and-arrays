@@ -9,9 +9,13 @@ public class Task06Main {
          */
     }
 
+    static int first_max(int a, int b){
+        if(a > b) return a;
+        else return b;
+    }
+
     static int getMax(int a, int b, int c, int d) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        return(first_max(first_max(a, b), first_max(c, d)));
     }
 
 }
