@@ -1,7 +1,5 @@
 package com.example.task11;
 
-import sun.security.util.ArrayUtil;
-
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 
