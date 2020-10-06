@@ -14,7 +14,7 @@ public class Task11Main {
     static void swap(int[] arr) {
         if (arr == null || arr.length == 0) return;
         int min = 0;
-        for(int i = 1; i < arr.length; ++i){
+        for(int i = 1; i < arr.length; i++){
             if(arr[i] < arr[min]) min = i;
         }
         if (min == 0) return;
